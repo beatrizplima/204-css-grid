@@ -13,16 +13,71 @@ body{
 header{
     grid-area: header;
     background-color: rgb(192, 192, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 23%;
+    height: 90%;
+    border-radius: 200%;
 }
 
 nav{
     grid-area: navbar;
     background-color:rgb(192, 192, 248);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+nav a{
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
 }
 
 section{
     grid-area: section;
     background-color: rgb(192, 192, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h3{
+    color: goldenrod;
+    font-size: 13pt;
+    margin-top: 20px;
+}
+
+section button{
+    margin-top: 20px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+section input{
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px green solid;
+    background-color: transparent;
+    font-size: 14pt;
+}
+
+section input::placeholder{
+    font-size: 14pt;
+    color: green;
+}
+
 }
 
 aside{
@@ -34,3 +89,12 @@ footer{
     grid-area: footer;
     background-color: rgb(192, 192, 248);
 }
+
+h1{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 37pt;
+    margin: 50px;
+    color: rgb(10, 51, 10);
+}
+
