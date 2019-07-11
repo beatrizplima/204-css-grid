@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'section navbar navbar navbar'
+                         'section aside aside aside'
+                         'footer footer footer footer';
+    grid-template-rows: 30vh 10vh 70vh 20vh; 
+    grid-gap: 5px;
+    background-color: azure;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(192, 192, 248);
+}
+
+nav{
+    grid-area: navbar;
+    background-color:rgb(192, 192, 248);
+}
+
+section{
+    grid-area: section;
+    background-color: rgb(192, 192, 248);
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(192, 192, 248);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(192, 192, 248);
+}
